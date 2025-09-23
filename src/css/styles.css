@@ -27,6 +27,10 @@ body {
     transform: translateY(-5px);
 }
 
+.btn {
+    margin-bottom: 5px;
+  }
+
 .btn-primary {
     background-color: var(--cor-primaria);
     border-color: var(--cor-primaria);
