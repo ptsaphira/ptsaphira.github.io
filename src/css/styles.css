@@ -1,0 +1,63 @@
+
+:root{
+  --cor-primaria:#2B6CB0;
+  --cor-sec:#7FD3C7;
+  --accent:#F6C85F;
+  --bg:#F7FAFC;
+  --texto:#1F2937;
+  --radius:12px;
+  --font-family-base: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--font-family-base);
+    color: var(--texto);
+    background-color: var(--bg);
+}
+
+/* BEM simples para cards */
+.card--categoria {
+    border-radius: var(--radius);
+    background:#fff;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card--categoria:hover {
+    transform: translateY(-5px);
+}
+
+.btn-primary {
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+}
+
+.btn-primary:hover {
+    background-color: darken(var(--cor-primaria), 10%);
+    border-color: darken(var(--cor-primaria), 10%);
+}
+
+.btn-outline-primary {
+    color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--cor-primaria);
+    color: #fff;
+}
+
+/* Waves for header/footer - placeholder */
+.wave-top {
+    background: url('../imagens/wave-top.svg') no-repeat center bottom;
+    background-size: cover;
+    height: 100px; /* Adjust as needed */
+}
+
+.wave-bottom {
+    background: url('../imagens/wave-bottom.svg') no-repeat center top;
+    background-size: cover;
+    height: 100px; /* Adjust as needed */
+}
+
+
