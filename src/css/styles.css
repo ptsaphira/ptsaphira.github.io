@@ -64,4 +64,8 @@ body {
     height: 100px; /* Adjust as needed */
 }
 
+#promoPopup .modal-content {
+  max-width: 600px; /* limite opcional */
+  margin: auto;
+}
 
