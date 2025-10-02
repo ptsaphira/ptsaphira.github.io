@@ -93,6 +93,6 @@ To view the website locally, simply open `index.html` in your web browser. For d
 
 ## Contact
 
-For any questions or further assistance, please contact [saphiraoticapt@gmail.com](mailto:saphiraoticapt@gmail.com).
+For any questions or further assistance, please contact [saphiramessines@gmail.com](mailto:saphiramessines@gmail.com).
 
 
