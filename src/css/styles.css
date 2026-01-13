@@ -1,4 +1,3 @@
-
 :root{
   --cor-primaria:#2B6CB0;
   --cor-sec:#7FD3C7;
@@ -6,26 +5,38 @@
   --bg:#F7FAFC;
   --texto:#1F2937;
   --radius:12px;
-  --font-family-base: 'Inter', sans-serif;
+  --font-family-base:'Inter', sans-serif;
 }
 
+/* =======================
+   BASE
+======================= */
 body {
-    font-family: var(--font-family-base);
-    color: var(--texto);
-    background-color: var(--bg);
+  font-family: var(--font-family-base);
+  color: var(--texto);
+  background-color: var(--bg);
+  margin: 0;
 }
 
-/* BEM simples para cards */
+/* =======================
+   CARDS
+======================= */
 .card--categoria {
-    border-radius: var(--radius);
-    background:#fff;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
-    transition: transform 0.2s ease-in-out;
-} 
+  border-radius: var(--radius);
+  background:#fff;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease-in-out;
+}
 
- 
+.card--categoria:hover {
+  transform: translateY(-5px);
+}
+
+/* =======================
+   MODAL PROMO
+======================= */
 .modal {
-  display: none;
+  display: none; /* controlado via JS */
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.85);
@@ -33,7 +44,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 
 .modal-content {
   background: #000;
@@ -46,6 +56,7 @@ body {
   opacity: 0;
 }
 
+/* animação de entrada */
 .animate {
   animation: zoomIn 0.45s ease forwards;
 }
@@ -57,15 +68,21 @@ body {
   }
 }
 
+/* botão fechar */
 .close {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 8px;
+  right: 14px;
   font-size: 32px;
+  line-height: 1;
   color: #fff;
   cursor: pointer;
+  z-index: 10;
 }
 
+/* =======================
+   CTA
+======================= */
 .cta-top {
   background: #e60000;
   color: #fff;
@@ -77,10 +94,15 @@ body {
   margin-bottom: 10px;
 }
 
+/* =======================
+   VIDEO RESPONSIVO
+======================= */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .video-container iframe {
@@ -88,8 +110,12 @@ body {
   inset: 0;
   width: 100%;
   height: 100%;
+  border: 0;
 }
 
+/* =======================
+   BOTÃO WHATSAPP
+======================= */
 .whatsapp-btn {
   display: flex;
   align-items: center;
@@ -103,11 +129,12 @@ body {
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .whatsapp-btn img {
   width: 30px;
+  height: auto;
 }
 
 .whatsapp-btn:hover {
@@ -115,51 +142,48 @@ body {
   box-shadow: 0 0 20px rgba(37,211,102,0.8);
 }
 
-
-
-.card--categoria:hover {
-    transform: translateY(-5px);
+/* =======================
+   BOTÕES GERAIS
+======================= */
+.btn {
+  margin-bottom: 10px;
 }
 
-.btn {
-    margin-bottom: 10px;
-  }
-
+/* primário */
 .btn-primary {
-    background-color: var(--cor-primaria);
-    border-color: var(--cor-primaria);
+  background-color: var(--cor-primaria);
+  border: 1px solid var(--cor-primaria);
+  color: #fff;
 }
 
 .btn-primary:hover {
-    background-color: darken(var(--cor-primaria), 10%);
-    border-color: darken(var(--cor-primaria), 10%);
+  background-color: #1e4e85; /* substitui darken() inválido */
+  border-color: #1e4e85;
 }
 
+/* outline */
 .btn-outline-primary {
-    color: var(--cor-primaria);
-    border-color: var(--cor-primaria);
+  color: var(--cor-primaria);
+  border: 1px solid var(--cor-primaria);
+  background: transparent;
 }
 
 .btn-outline-primary:hover {
-    background-color: var(--cor-primaria);
-    color: #fff;
+  background-color: var(--cor-primaria);
+  color: #fff;
 }
 
-/* Waves for header/footer - placeholder */
+/* =======================
+   WAVES (opcional)
+======================= */
 .wave-top {
-    background: url('../imagens/wave-top.svg') no-repeat center bottom;
-    background-size: cover;
-    height: 100px; /* Adjust as needed */
+  background: url('../imagens/wave-top.svg') no-repeat center bottom;
+  background-size: cover;
+  height: 100px;
 }
 
 .wave-bottom {
-    background: url('../imagens/wave-bottom.svg') no-repeat center top;
-    background-size: cover;
-    height: 100px; /* Adjust as needed */
+  background: url('../imagens/wave-bottom.svg') no-repeat center top;
+  background-size: cover;
+  height: 100px;
 }
-
-#promoPopup .modal-content {
-  max-width: 600px; /* limite opcional */
-  margin: auto;
-}
-
