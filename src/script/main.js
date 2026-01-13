@@ -34,6 +34,34 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-    // Add any other global JavaScript functionalities here
+    
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("promoModal");
+  const closeBtn = document.querySelector(".close");
+
+  const STORAGE_KEY = "promo_seen_date";
+  const THREE_DAYS = 3 * 24 * 60 * 60 * 1000;
+  const now = Date.now();
+  const lastSeen = localStorage.getItem(STORAGE_KEY);
+
+  if (!lastSeen || now - lastSeen > THREE_DAYS) {
+    setTimeout(() => {
+      modal.style.display = "flex";
+      localStorage.setItem(STORAGE_KEY, now);
+    }, 1000);
+  }
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
+ 
+ 
 });
 
