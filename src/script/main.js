@@ -1,12 +1,20 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const currentYearSpan = document.getElementById('currentYear');
-    if (currentYearSpan) {
-        currentYearSpan.textContent = new Date().getFullYear();
-    }
-
- 
+<script>
 document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     ANO ATUAL AUTOMÁTICO
+  ========================= */
+  const currentYearSpan = document.getElementById("currentYear");
+  if (currentYearSpan) {
+    currentYearSpan.textContent = new Date().getFullYear();
+  }
+
+  /* =========================
+     MODAL PROMO
+  ========================= */
   const modal = document.getElementById("promoModal");
+  if (!modal) return; // segurança
+
   const closeBtn = modal.querySelector(".close");
 
   const STORAGE_KEY = "promo_seen_date";
@@ -15,29 +23,40 @@ document.addEventListener("DOMContentLoaded", function () {
   const now = Date.now();
   const lastSeen = localStorage.getItem(STORAGE_KEY);
 
-  // Abre após 1s se nunca viu ou passou 3 dias
+  // Abrir após 1s se nunca viu ou passou 3 dias
   if (!lastSeen || now - lastSeen > THREE_DAYS) {
     setTimeout(() => {
       modal.style.display = "flex";
+
+      // garante animação sempre
+      const content = modal.querySelector(".modal-content");
+      if (content) {
+        content.classList.remove("animate");
+        void content.offsetWidth; // reflow
+        content.classList.add("animate");
+      }
+
       localStorage.setItem(STORAGE_KEY, now);
     }, 1000);
   }
 
+  /* =========================
+     FECHAMENTO
+  ========================= */
+
   // Fechar no X
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
+  if (closeBtn) {
+    closeBtn.addEventListener("click", function () {
+      modal.style.display = "none";
+    });
+  }
 
   // Fechar clicando fora
-  modal.addEventListener("click", (e) => {
+  modal.addEventListener("click", function (e) {
     if (e.target === modal) {
       modal.style.display = "none";
     }
   });
-});
- 
 
- 
- 
 });
-
+</script>
