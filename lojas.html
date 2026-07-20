@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saphira Ótica - Nossas Lojas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="sticky top-0 z-40 bg-white border-b border-gray-200">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-2 font-bold text-xl text-gray-900 hover:text-blue-600 transition-colors">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center text-white font-bold">
+                        S
+                    </div>
+                    <span>Saphira Ótica</span>
+                </a>
+
+                <!-- Navigation -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="/" class="text-gray-600 hover:text-gray-900 transition-colors font-medium">Início</a>
+                    <a href="/lojas.html" class="text-gray-600 hover:text-gray-900 transition-colors font-medium">Lojas</a>
+                    <a href="/pages/categorias.html" class="text-gray-600 hover:text-gray-900 transition-colors font-medium">Produtos</a>
+                 
+                    <a href="/contato.html" class="text-gray-600 hover:text-gray-900 transition-colors font-medium">Contacto</a>
+                </nav>
+
+                <!-- Store Indicator -->
+                <div class="hidden md:flex items-center gap-4">
+                    <div class="flex items-center gap-2 text-sm text-gray-600">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+        <!-- Header Section -->
+        <section class="bg-gradient-to-br from-blue-50 to-blue-100 py-12">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl font-bold text-gray-900 mb-2">
+                    Nossas Lojas
+                </h1>
+                <p class="text-lg text-gray-700">
+                    Visite-nos em uma das nossas localizações para uma experiência completa de ótica.
+                </p>
+            </div>
+        </section>
+
+        <!-- Stores Grid -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Store 1: Messines -->
+                    <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                        <!-- Store Header -->
+                        <div class="bg-gradient-to-r from-blue-600 to-blue-700 p-8 text-white">
+                            <h2 class="text-2xl font-bold mb-2">Saphira Ótica — São Bartolomeu de Messines</h2>
+                            <p class="text-blue-100">Visite a nossa loja em São Bartolomeu de Messines, no coração do Algarve, para uma experiência completa de ótica com atendimento personalizado.</p>
+                        </div>
+
+                        <!-- Store Info -->
+                        <div class="p-8 space-y-6">
+                            <!-- Address -->
+                            <div class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                <div>
+                                    <p class="font-medium text-gray-900">R. da Liberdade nº 31 A</p>
+                                    <p class="text-gray-600">8375-109</p>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="flex items-center gap-3">
+                                <svg class="w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 00.948.684l1.498 7.985a1 1 0 00.502.756l4.147 2.411a1 1 0 001.053-.133l1.682-1.6a1 1 0 011.414 0l2.828 2.829a1 1 0 010 1.414l-1.6 1.682a1 1 0 00-.133 1.053l2.411 4.147a1 1 0 00.756.502l7.985 1.498a1 1 0 00.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                                <a href="tel:+351282012518" class="text-blue-600 hover:text-blue-700 font-medium">+351 282 012 518</a>
+                                <a href="tel:+351965058248" class="text-blue-600 hover:text-blue-700 font-medium">+351 965 058 248</a>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="flex items-center gap-3">
+                                <svg class="w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                <a href="mailto:saphiramessines@gmail.com" class="text-blue-600 hover:text-blue-700 font-medium">saphiramessines@gmail.com</a>
+                            </div>
+
+                            <!-- Hours -->
+                            <div class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <div class="text-sm">
+                                    <p class="font-medium text-gray-900">Seg-Sex: 09:00 - 18:00</p>
+                                    <p class="font-medium text-gray-900">Sáb-Dom: 10:00 - 13:00</p>
+                                </div>
+                            </div>
+
+                            <!-- Divider -->
+                            <div class="border-t border-gray-200 pt-6"></div>
+
+                            <!-- CTAs -->
+                            <div class="space-y-3">
+                                <a href="https://wa.me/351965058248?text=Olá!%20Vi%20a%20promoção%20no%20site%20e%20quero%20mais%20informações" target="_blank" rel="noopener noreferrer" class="w-full block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg text-center transition-colors">
+                                    Agendar na loja
+                                </a>
+                                <a href="https://maps.app.goo.gl/5ZLi9BHrJnZyo5eb9" target="_blank" rel="noopener noreferrer" class="w-full block border border-blue-600 text-blue-600 hover:bg-blue-50 font-medium py-2 px-4 rounded-lg text-center transition-colors flex items-center justify-center gap-2">
+                                    Ver no Google Maps
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Store 2: Almodôvar -->
+                    <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                        <!-- Store Header -->
+                        <div class="bg-gradient-to-r from-blue-600 to-blue-700 p-8 text-white">
+                            <h2 class="text-2xl font-bold mb-2">Saphira Ótica — Almodôvar</h2>
+                            <p class="text-blue-100">Visite a nossa loja em Almodôvar para descobrir a melhor selecção de óculos e soluções de ótica personalizadas.</p>
+                        </div>
+
+                        <!-- Store Info -->
+                        <div class="p-8 space-y-6">
+                            <!-- Address -->
+                            <div class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                <div>
+                                    <p class="font-medium text-gray-900">Rua da Malpica, Nº 16</p>
+                                    <p class="text-gray-600">7700-206</p>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="flex items-center gap-3">
+                                <svg class="w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 00.948.684l1.498 7.985a1 1 0 00.502.756l4.147 2.411a1 1 0 001.053-.133l1.682-1.6a1 1 0 011.414 0l2.828 2.829a1 1 0 010 1.414l-1.6 1.682a1 1 0 00-.133 1.053l2.411 4.147a1 1 0 00.756.502l7.985 1.498a1 1 0 00.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                                <a href="tel:+351966271424" class="text-blue-600 hover:text-blue-700 font-medium">+351 966 271 424</a>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="flex items-center gap-3">
+                                <svg class="w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                <a href="mailto:saphiraalmodovar@gmail.com" class="text-blue-600 hover:text-blue-700 font-medium">saphiraalmodovar@gmail.com</a>
+                            </div>
+
+                            <!-- Hours -->
+                            <div class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <div class="text-sm">
+                                    <p class="font-medium text-gray-900">Seg-Sex: 09:00 - 18:00</p>
+                                    <p class="font-medium text-gray-900">Sáb-Dom: 10:00 - 13:00</p>
+                                </div>
+                            </div>
+
+                            <!-- Divider -->
+                            <div class="border-t border-gray-200 pt-6"></div>
+
+                            <!-- CTAs -->
+                             <div class="space-y-3">
+                                <a href="https://wa.me/351966271424?text=Olá!%20Vi%20a%20promoção%20no%20site%20e%20quero%20mais%20informações" target="_blank" rel="noopener noreferrer" class="w-full block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg text-center transition-colors">
+                                    Agendar na loja
+                                </a>
+                                <a href="https://maps.app.goo.gl/C7xbhsgYLVEphLCg9" target="_blank" rel="noopener noreferrer" class="w-full block border border-blue-600 text-blue-600 hover:bg-blue-50 font-medium py-2 px-4 rounded-lg text-center transition-colors flex items-center justify-center gap-2">
+                                    Ver no Google Maps
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="bg-gray-50 py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto bg-white rounded-lg p-8 border border-gray-200">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">
+                        Informações Importantes
+                    </h2>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <span class="text-blue-600 font-bold mt-1">•</span>
+                            <span>Realizamos exames de visão completos com equipamento moderno</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-blue-600 font-bold mt-1">•</span>
+                            <span>Ampla variedade de marcas e estilos de armações</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-blue-600 font-bold mt-1">•</span>
+                            <span>Lentes de contacto e acessórios de qualidade</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-blue-600 font-bold mt-1">•</span>
+                            <span>Atendimento personalizado e profissional</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 mt-16">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-3 gap-12 mb-12">
+                <!-- Brand -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Saphira Ótica</h3>
+                    <p class="text-sm leading-relaxed">
+                        A cuidar da sua visão com estilo. Óculos, lentes de contacto e soluções personalizadas para cada necessidade.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/" class="hover:text-white transition-colors">Início</a></li>
+                        <li><a href="/lojas.html" class="hover:text-white transition-colors">Lojas</a></li>
+                        <li><a href="/pages/categorias.html" class="hover:text-white transition-colors">Produtos</a></li>
+                        
+                    </ul>
+                </div>
+
+                <!-- Stores Info -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Nossas Lojas</h4>
+                    <div class="space-y-4 text-sm">
+                        <div>
+                            <p class="font-medium text-white mb-1">São Bartolomeu de Messines</p>
+                            <div class="space-y-1 text-xs">
+                                <p>📍 R. da Liberdade nº 31 A</p>
+                                <p>📞 <a href="tel:+351282012518" class="hover:text-white transition-colors">+351 282 012 518</a></p>
+                                <p>✉️ <a href="mailto:saphiramessines@gmail.com" class="hover:text-white transition-colors">saphiramessines@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="font-medium text-white mb-1">Almodôvar</p>
+                            <div class="space-y-1 text-xs">
+                                <p>📍 Rua da Malpica nº 16</p>
+                        
+                                <p>📞 <a href="tel:+351966271424" class="hover:text-white transition-colors">+351 966 271 424</a></p>
+                                <p>✉️ <a href="mailto:saphiraalmodovar@gmail.com" class="hover:text-white transition-colors">saphiraalmodovar@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+                <p>&copy; 2026 Saphira Ótica. Todos os direitos reservados.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Política de Privacidade</a>
+                    <a href="#" class="hover:text-white transition-colors">Termos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
