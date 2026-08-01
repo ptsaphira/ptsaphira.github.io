@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* =========================
      MODAL PROMO
-  ========================= */
+  ========================= 
   const modal = document.getElementById("promoModal");
   if (!modal) return; // segurança
 
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* =========================
      FECHAMENTO
-  ========================= */
+  =========================  
 
   // Fechar no X
   if (closeBtn) {
@@ -59,4 +59,4 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
- 
+ */
